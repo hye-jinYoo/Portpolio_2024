@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" text="text/css" href="./Portpolio_01.css">
+</head>
+
+<body>
+    <div class="header">
+        <div class="title_copy">
+            <span class="span_t"></span>
+            <marquee behavior="alternate"> ONLY I CAN CHANGE MY LIFE</marquee><br/>
+            <marquee behavior="alternate"> NO ONE CAN DO IT FOE ME</marquee><br/>
+            <marquee behavior="alternate"> DESIGN BY ME </marquee>
+        </div>
+        <img src="./img/index_01.jpg">
+        <div class="logo"><img src="./img/yh.png"></div>
+        <ul class="main_menu">
+            <li>ABOUT</li>
+            <li>WORK</li>
+            <li>CONTACT</li>
+        </ul>
+        <div class="mobile_menu">MENU</div>
+
+    </div>
+    <div class="project_items">
+        <div class="pr_line">
+            <div class="pr_item">
+                <div class="pr_img">
+                    <img src="./img/pr01.jpg" onclick="img()">
+                </div>
+                <div id="new_img" class="new_img" style="display: none;">
+                    <div class="inner">
+                        <img id="new01" src="./img/MA_101_메인.jpg">
+                        <button type="button" class="btn_close" onclick="imgx()">&#x2715;</button>
+                    </div>
+                </div>
+                <div class="pr_info">
+                    <div class="pr_text01">CESCO Homepage</div>
+                    <div class="pr_text02">2023</div>
+                </div>
+            </div>
+
+            <div class="pr_item">
+                <div class="pr_img">
+                    <img src="./img/pr02.jpg" >
+                </div>
+                <div id="new_img2" class="new_img" style="display: none;">
+                    <div class="inner">
+                        <img id="new02" src="./img/main2.jpeg">
+                        <button type="button" class="btn_close" onclick="imgx2()">&#x2715;</button>
+                    </div>
+                </div>
+                <div class="pr_info">
+                    <div class="pr_text01">CESCO Iot APP</div>
+                    <div class="pr_text02">2022</div>
+                </div>
+            </div>
+
+            <div class="pr_item">
+                <div class="pr_img">
+                    <img src="./img/pr03.png" onclick="img3()">
+                </div>
+                <div id="new_img3" class="new_img" style="display: none;">
+                    <div class="inner">
+                        <img id="new03" src="./img/main3.jpeg">
+                        <button type="button" class="btn_close" onclick="imgx3()">&#x2715;</button>
+                    </div>
+                </div>
+                <div class="pr_info">
+                    <div class="pr_text01">CESCO Mall</div>
+                    <div class="pr_text02">2022</div>
+                </div>
+            </div>
+
+
+        </div>
+
+        <div class="pr_line">
+            <div class="pr_item">
+                <div class="pr_img">
+                    <img src="./img/pr04.jpeg" onclick="img4()">
+                </div>
+                <div id="new_img4" class="new_img" style="display: none;">
+                    <div class="inner">
+                        <img id="new03" src="./img/main4.jpg">
+                        <button type="button" class="btn_close" onclick="imgx4()">&#x2715;</button>
+                    </div>
+                </div>
+                <div class="pr_info">
+                    <div class="pr_text01">CESCO Mall</div>
+                    <div class="pr_text02">2021</div>
+                </div>
+            </div>
+
+            <div class="pr_item">
+                <div class="pr_img">
+                    <img src="./img/pr02.jpg">
+                </div>
+                <div class="pr_info">
+                    <div class="pr_text01">CESCO</div>
+                    <div class="pr_text02">2021</div>
+                </div>
+            </div>
+
+            <div class="pr_item">
+                <div class="pr_img">
+                    <img src="./img/pr03.png">
+                </div>
+                <div class="pr_info">
+                    <div class="pr_text01">CESCO</div>
+                    <div class="pr_text02">2021</div>
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+    <!-- Code injected by live-server -->
+    <script>
+        // <![CDATA[ <-- For SVG support
+        if ('WebSocket' in window) {
+            (function () {
+                function refreshCSS() {
+                    var sheets = [].slice.call(document.getElementsByTagName("link"));
+                    var head = document.getElementsByTagName("head")[0];
+                    for (var i = 0; i < sheets.length; ++i) {
+                        var elem = sheets[i];
+                        var parent = elem.parentElement || head;
+                        parent.removeChild(elem);
+                        var rel = elem.rel;
+                        if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+                            var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+                            elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+                        }
+                        parent.appendChild(elem);
+                    }
+                }
+                var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+                var address = protocol + window.location.host + window.location.pathname + '/ws';
+                var socket = new WebSocket(address);
+                socket.onmessage = function (msg) {
+                    if (msg.data == 'reload') window.location.reload();
+                    else if (msg.data == 'refreshcss') refreshCSS();
+                };
+                if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+                    console.log('Live reload enabled.');
+                    sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+                }
+            })();
+        }
+        else {
+            console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+        }
+        // ]]>
+    </script>
+</body>
+
+</html>
+
+
+<!-- javascript -->
+<script src="http://code.jquery.com/jquery-latest.min.js"></script>
+
+<script>
+    $(".pr_item").click((e)=>{
+        $(e.target).addClass("active");
+    })
+    $(".pr_item .new_img .btn_close").click((e)=>{
+        $(e.target).parent().parent().parent().removeClass("active");
+    })
+
+    // function img() {
+    //     $("#new_img").show();
+    // }
+    // function imgx() {
+    //     $("#new_img").hide();
+    // }
+    // function img2() {
+    //     $("#new_img2").show();
+    // }
+    // function imgx2() {
+    //     $("#new_img2").hide();
+    // }
+    // function img3() {
+    //     $("#new_img3").show();
+    // }
+    // function imgx3() {
+    //     $("#new_img3").hide();
+    // }
+    // function img4() {
+    //     $("#new_img4").show();
+    // }
+    // function imgx4() {
+    //     $("#new_img4").hide();
+    // }
+</script>
+<!-- javascript -->

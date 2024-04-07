@@ -1,0 +1,121 @@
+body{
+    font-family: 'pretendard' sans-serif;
+    margin: 0px;
+    padding: 0px;
+    color: #121212;
+    background-color: #fff;
+}
+
+ul,li{
+    display: flex;
+    list-style: none;
+    padding: 0px;
+    margin: 0px;
+}
+
+.header{
+    color: #fff;
+    display: flex;
+    justify-content:space-between;
+    position:fixed;
+    mix-blend-mode:difference;
+    //반전효과 나는것
+    top: 15px;
+    left: 30px;
+    right: 30px;
+    
+    .main_menu{
+        display: flex;
+        font-size: 22px;
+        line-height: 26.4px;
+        gap: 30px;
+        text-transform: uppercase;
+        
+    }
+    .mobile_menu{
+        display: none;
+    }
+
+}
+.main{
+    .main_title{
+        font-size: 5vw;
+        line-height:5.5vw;
+        margin-left: 30px;
+        margin-top: 170px;
+        .span_t{
+            width: 15vw;
+            display: inline-block;
+        }
+    }
+
+    .business_info{
+        margin-top: 125px;
+        display: flex;
+        justify-content:space-between;
+        margin: 0px, 30px;
+        text-transform: uppercase;
+        font-size: 24px;
+        line-height: 40px;
+        margin-left: 30px;
+        margin-right: 30px;
+        .bi_right{
+            display: flex;
+            gap:100px;
+        }
+        }
+    }
+        
+.main_img{
+    position: relative;
+
+    img{
+        width: 100%;
+    }
+    .main_desc{
+
+        position: absolute;
+        font-size: 18px;
+        line-height: 24px;
+        letter-spacing: -0.01em;
+        line-height: 1.8vw;
+        color: #fff;
+        top: 50px;
+        left: 30px;
+
+    }
+}
+@media only screen and (max-width: 600px) {
+    .header{
+        margin-top: 7px;
+        left: 15px;
+        right: 15px;
+        .logo{
+            img{
+            width: 66px;
+        }
+        }
+        .main_menu{
+            display:none;
+        }
+        .mobile_menu{
+            display: block;
+            font-size: 15px;
+        }
+        
+    }
+    .main{
+      margin: 0, 15px;
+         .business_info{
+            font-size: 15px;
+            right: 15px;
+      }
+         .main_desc{
+            font-size: 14px;
+            line-height: 19px;
+     }
+        .main_img{
+            width: 600px;
+        }
+    }
+}
